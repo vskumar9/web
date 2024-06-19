@@ -52,3 +52,23 @@ MY_ARRAY.push("JAVASCRIPT");
 console.log(MY_ARRAY); // ['HTML', 'CSS', 'JAVASCRIPT'];
 var name = MY_ARRAY.pop();
 console.log(name);
+
+/* a data type represents the type of data that can be
+ stored and manipulated in a program. Let's look at some 
+ common data types in JavaScript
+ */
+
+//  1. Number
+let number = 5
+
+//  2. BigInt +-((2**53)-1)
+const BigInt = 8747895548466664513849644916464646114946n
+
+// String
+let name = 'sanjeev'
+
+// Boolean
+let isTrue = true
+
+// Null
+let x = null
