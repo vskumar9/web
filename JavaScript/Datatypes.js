@@ -40,3 +40,26 @@ console.log(z);
 console.log("37" - 7); // 30
 console.log("37" * 7); // 259
 
+/*
+
+In JavaScript, a data type represents the type of 
+data that can be stored and manipulated in a program. 
+Let's look at some common data types in JavaScript. 
+
+*/
+
+// Number
+let x = 5;
+
+// BigInt
+const BigInt = 9665464564594851299999161654682134644n;
+
+// String
+let name = 'sanjeev'
+
+// Boolean
+let isTrue = true
+
+// null
+let m = null;
+
