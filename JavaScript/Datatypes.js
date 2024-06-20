@@ -63,3 +63,15 @@ let isTrue = true
 // null
 let m = null;
 
+// undefined
+var age;
+
+// object
+let person = {
+    name : 'kumar',
+    age : 23
+}
+
+// symbol
+
+let id = Symbol('id')
