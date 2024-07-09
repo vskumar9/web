@@ -14,5 +14,12 @@ console.log(`1 + 2 = ${1 + 2}`);
 
 console.log(str1.length);
 console.log(str1[2]);
+
+console.log(str1.slice(1,4));
 console.log(str1.substring(1,4));
 
+console.log(str1.concat(" ", str2));
+
+let str4 = str1 + " " + str2;
+
+console.log(str4);
