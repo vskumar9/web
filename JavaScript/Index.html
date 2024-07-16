@@ -19,10 +19,83 @@
     </ul>
     <script>
         console.log(document.getElementById('hello'));
-        let items = document.getElementsByClassName('green');
+        let ite = document.getElementsByClassName('green');
         console.log(items);
         let list = document.getElementsByTagName('li');
         console.log(list);
+        let item = document.querySelector('.green')
+        console.log(item);
+        let items = document.querySelectorAll('.green');
+        console.log(items);
+
+
     </script>
 </body>
 </html>
+<!-- 
+
+Let's get started. Accessing DOM elements with JavaScript is a key 
+skill for web development. As we know, the Document Object Model is 
+a tree-like structure that represents a HTML elements of a webpage. 
+You can use JavaScript to access these elements in various ways. To 
+get started, you will need to know how to select an element. Let's 
+look at some commonly used DOM selectors in JavaScript. Forces document.
+getElementById. It returns the element with the specific ID. Let's see
+ how we can use that. Let's go to the VS Code and here I have index.
+ html file. I can delete this one, and let's create a very basic boiler 
+ plate using this shortcut. You can see we have a title document. Let's 
+ make it DOM. In the body, we can say h1 of DOM selectors. If I click on 
+ "Save", you can see that we have the output on the webpage. We're talking 
+ about document.getElementById. Here we can have a div, and let's say, 
+ Hello world. What we can do is we can create one more div, and we can 
+ just say, Hi there. The first div, we'll just give it an Id of let's say 
+ Hello. Out of all these elements, we want to access the first div of id
+  hello. Here I will script tag and I will say document, or we can say 
+  console.log document.getElementbyId, and we can pass the ID name here. 
+  The id is hello, we have to pass it in quotes. If I click on "Save", let's 
+  go to Inspect, let's go to Console and you can see that we have got this 
+  div. It's cool. We have got this on the basis of id. The next one is document.
+  getElementsByClassName. The little difference you will see here that it is 
+  getElements. Earlier one was getElement, we can only get one element out of 
+  it, but here we can get multiple elements by class name. Returns a collection 
+  of all the elements that the specified class name. For example, if I create a 
+  unordered list and inside that I have li class let's say green. We can say item 
+  1, and we can create one more li or let's say four li's out of which only two 
+  has the class of green, so we can remove these options here.
+
+  If I click on "Save" and if I rather than doing this, what I can do is I can say 
+let items, I can also put them in a variable. I can say document.getElementsByClassName, 
+and we can pass the class name as green. Then we can say console.log (items). 
+If I click on "Save", if I go here, if I refresh, you will see that we get an HTML 
+collection. It has an li structure, and we get two li items that has the class of 
+green color. Let's go to the next one. Next one is document.getElementsByTagName. 
+Here also, we can get multiple collections, or you can say it returns a collection 
+of all the elements with the specified tag name. We have multiple li items here. 
+What we can do is, let's just copy paste this, instead of document.getElementsByClassName, we 
+can see getElementsByTagName. Here, the tag name is li, we have to pass it like 
+this. If I click on "Save", if I go here, let's refresh, you can see that we're 
+getting all the li items, so this is now a collection of four elements.
+
+Next one is document.querySelector. It returns the first element that matches the 
+specified CSS selector. For example, we have here li and two class names are green. 
+What I will do is I will say let item. Let's comment this out, and we will use query 
+selected here, and I will say I want to get the item that has a class of green. 
+We have to add a CSS selector as well, that is dot for class. You may notice that 
+two of the li classes have class green. If I do console.log item, it returns only 
+the first li element that has a text of item one. It should always returns the first 
+element that matches the specified CSS selector. But then if you want to get all 
+the classes, or you can say all the li items that has a class of green, one way 
+was to use getElementsByClassName. The other method that is the last one, that is 
+document.querySelectorAll. Here, what we can do is we can say querySelectorAll, 
+and we are passing the same green class here. Now if I do items, if I click on 
+"Save", you will see that it returns a collection of all the items that match the 
+specified CSS selector. Let's summarize this. We know that the Document Object 
+Model is a tree-like structure that represents the HTML elements of a webpage. 
+JavaScript provides various methods to access these elements, such as getElementById
+, getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll. 
+Once we have a reference when element, you can modify its attributes, content, 
+and style, or create new elements using other methods that we would be looking at 
+in a separate video. With these tools, you can create dynamic and interactive 
+webpages that responds to user input and update in real time. This is all for 
+this video. In the next video, we will see how to manipulate DOM using JavaScrip
+-->
