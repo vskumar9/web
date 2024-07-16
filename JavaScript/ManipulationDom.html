@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation DOM</title>
+</head>
+<body>
+    <h1>Manipulation DOM</h1>
+
+    <script>
+        console.log();
+        //console.dir(document);
+        console.log(document.domain);
+        console.log(document.URL);
+        document.title = 'dom manipulation';
+        console.log(document.body);
+        console.log(document.head);
+        const body = document.body;
+
+        body.append('Hello');
+        // create elements
+        const div = document.createElement('div');
+        console.log(div);
+        // add text in side element
+        div.innerText = 'JavaScript';
+        body.appendChild(div);
+        //remove elements
+        body.removeChild(div);
+        div.remove();
+    </script>
+</body>
+</html>
+
+<!-- 
+let's get started. When we talk about manipulating the DOM with JavaScript, 
+we mean that it can be used to dynamically modify the elements on webpage 
+without having to reload the entire page. For example, suppose we have a 
+webpage with a button and a paragraph element. You can use JavaScript to 
+change the text inside the paragraph element when the button is clicked without 
+having to reload the entire page. To do this, you first need to select the 
+element you want to modify using a DOM selector. A DOM selector is a method 
+that allows you to select an element or group of elements on a webpage. There 
+are several different DOM selectors you can use and we have covered them in 
+the previous video. Once you have selected the element you want to modify, 
+you can then access and modify its properties. Properties are characteristics 
+of an element that you can change, such as its text, content, attributes and 
+styles. Let's see some examples. So now I am here in my VS code and I have an 
+indexed HTML with its boilerplate ready. I also have a script tag where we can 
+write our JavaScript code. And this is getting outputted in the webpage. This is 
+a very basic HTML page and this is what is called as DOM, you can say console.
+log and there is one more keyword that is console.dir that gives you a directory. 
+Or you can say properties or methods that you can use to manipulate the DOM. 
+If I say console.dir document, let's click on Save. Let's go to inspect and 
+console, you can see that it lists down all the properties and methods that you 
+can use. We have URL, location, background, color, baseURI, all elements. We have 
+a lot of things here. You can go through them and you can use whatever you want 
+to use as per your use cases. So if I want to get the domain, I can say, Console.
+log and we can just log the domain, so we can say log(document.domain). 
+So if I click on Save, you will see that we get domain, that is 127.0.0.1, in 
+this case. If I want to get the URL, I can just comment this and I can say 
+document.URL. If I click on Save, you will see that we get the URL of our webpage. 
+If you want to get title, we can get the title, or let's say if you want 
+to change the title, we can say document.title and we can make it equal to let's 
+say dom manipulation.
+
+So if I click on Save, it should be basically a string. If I click on Save, you 
+can see that the title has changed to DOM Manipulation here. Similarly, if you 
+want to get body, you can say document.body, it gives you the body of your entire 
+webpage. If you want to get head, you can say document.head, you can do a lot of 
+stuff. Let's see how we can add a text. So first you want to select the element, 
+so we want to select this body element. So we can say here let's say const and 
+const body = document.body. We have selected the body element, then we can use 
+method like body.append or append child, and we can just append a text here, 
+let's say hello. If I click on Save, you will see that hello comes here on the 
+webpage. Let's say we want to create a new element, so what we can do is we can 
+go here and we can just create a div. So let's create a variable that is const 
+div and we can say document.create element, so this is the method you can use 
+to create an element. Which element we want to create? We want to create a div, 
+so I can write div, at this point, you can write h3, you can write p tag, 
+whatever the element you want to create, you can just mention it here. And then 
+if I say console.log(div) let's comment the others.
+
+Let's target the body only at this point. If I click on Save, you will see that 
+in the console we are getting div. But is this div actually getting added? Let's 
+find out, so we can go to our element section. This is our HTML inside the body. 
+You can see that there is only h1, so where is this div gone? Actually what we 
+have done is we have just created an empty div, we have not yet added it into 
+our document. So for that, we can use append child. Before that you want to 
+add some text to a div. So you can say div.innerText, and let's say we are 
+adding JavaScript text here, and then we want to add the div inside the body. 
+So I can say body.append or append child and we can add a div. Now, if I click 
+on save you will see we have a div with text of JavaScript. This is how you can 
+create the elements. Let's also see how we can remove them.
+
+So if you want to say body and you can say body.remove child and we can pass div 
+here, so if I click on Save you will see that that particular div is gone. 
+This is how you can remove, there is one more method that is directly removed. 
+So you just have to target that div and you have to say div.remove. That's it, 
+it would also remove this particular div.
+
+So we have seen couple of methods here, that is inner text append and append 
+child and remove as well. Let's summarize this. So accessing DOM elements with 
+JavaScript allows you to select and modify elements on a web page without having 
+to reload the entire page. You can use DOM selectors to select elements and 
+then modify their properties such as text, content attributes, styles and child 
+elements and then so on.
+-->
